@@ -1,0 +1,15 @@
+name: news_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - openjdk=11       # often needed for some text or crawler dependencies
+  - pip:
+      - elasticsearch==9.1.1
+      - news-please==1.5.33
+      - newspaper3k==0.2.8
+      - nltk==3.9.2
+      - tqdm==4.67.1
+      - trafilatura==2.0.0
